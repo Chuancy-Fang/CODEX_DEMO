@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鹿鸣小馆 | 时令餐厅</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">鹿鸣小馆</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#menu">菜单</a>
+      <a href="#space">环境</a>
+      <a href="#booking">订位</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="餐厅首页">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1800&q=85"
+        alt="温暖灯光下的餐厅餐桌"
+      >
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Seasonal Table</p>
+        <h1>鹿鸣小馆</h1>
+        <p class="hero-copy">用当季食材做一桌舒服的晚餐，安静、热气腾腾、刚好适合和喜欢的人慢慢吃。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#booking">立即订位</a>
+          <a class="button secondary" href="#menu">查看菜单</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" aria-label="餐厅信息">
+      <div>
+        <span>营业时间</span>
+        <strong>11:30-14:30 / 17:30-22:00</strong>
+      </div>
+      <div>
+        <span>地址</span>
+        <strong>梧桐路 18 号庭院一层</strong>
+      </div>
+      <div>
+        <span>人均</span>
+        <strong>￥128 起</strong>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">Signature</p>
+        <h2>招牌菜</h2>
+      </div>
+      <div class="dish-grid">
+        <article class="dish-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=82" alt="炭烤牛排">
+          <div>
+            <h3>炭烤牛排配迷迭香汁</h3>
+            <p>外层焦香，内里保留肉汁，搭配烤蒜和小土豆。</p>
+            <span>￥168</span>
+          </div>
+        </article>
+        <article class="dish-card">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=82" alt="手工意面">
+          <div>
+            <h3>番茄罗勒手工意面</h3>
+            <p>每日现做面体，酸甜番茄酱与新鲜罗勒收尾。</p>
+            <span>￥78</span>
+          </div>
+        </article>
+        <article class="dish-card">
+          <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=82" alt="早午餐拼盘">
+          <div>
+            <h3>庭院早午餐拼盘</h3>
+            <p>溏心蛋、烤蔬菜、酸面包和自制香草黄油。</p>
+            <span>￥96</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="space" class="section space-section">
+      <div class="space-copy">
+        <p class="eyebrow">Dining Room</p>
+        <h2>安静但不拘谨的餐桌</h2>
+        <p>开放式厨房、木质长桌和低照度灯光，让每一餐都保持亲近感。午间适合轻松小聚，晚餐更适合纪念日、朋友聚会和两人约会。</p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85"
+        alt="餐厅室内空间"
+      >
+    </section>
+
+    <section class="section today-section">
+      <div class="section-heading">
+        <p class="eyebrow">Today</p>
+        <h2>今日推荐</h2>
+      </div>
+      <div class="today-list">
+        <div><span>前菜</span><strong>无花果火腿沙拉</strong><em>￥58</em></div>
+        <div><span>主菜</span><strong>慢炖番茄牛肋条</strong><em>￥138</em></div>
+        <div><span>甜点</span><strong>海盐焦糖布丁</strong><em>￥42</em></div>
+        <div><span>饮品</span><strong>桂花冷萃茶</strong><em>￥32</em></div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+      <div class="booking-copy">
+        <p class="eyebrow">Reservation</p>
+        <h2>预留今晚的一张桌</h2>
+        <p>工作日建议提前 2 小时预约，周末晚餐建议提前 1 天预约。</p>
+      </div>
+      <form class="booking-form">
+        <label>
+          姓名
+          <input type="text" name="name" placeholder="请输入姓名">
+        </label>
+        <label>
+          电话
+          <input type="tel" name="phone" placeholder="请输入手机号">
+        </label>
+        <label>
+          日期
+          <input type="date" name="date">
+        </label>
+        <label>
+          人数
+          <select name="party">
+            <option>2 位</option>
+            <option>3-4 位</option>
+            <option>5-6 位</option>
+            <option>7 位及以上</option>
+          </select>
+        </label>
+        <button type="submit">提交预约</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>鹿鸣小馆</span>
+    <span>电话 021-8800-1618</span>
+    <span>梧桐路 18 号庭院一层</span>
+  </footer>
+</body>
+</html>
